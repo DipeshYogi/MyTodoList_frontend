@@ -1,0 +1,16 @@
+.register > p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.register__inputs{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.register_btn{
+  margin-top: 10px;
+}
