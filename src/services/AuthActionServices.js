@@ -4,7 +4,6 @@ import requestInstance from './RequestInstance';
 
 export const doPostRequest = (url, actionType, data) => dispatch =>{
   return(
-    console.log(url),
     dispatch({type:actionType, status: STARTING, response: undefined}),
     requestInstance.post(url, data)
       .then(res => {

@@ -9,6 +9,9 @@ export const INITIAL = "INITIAL";
 export const FAILURE = "FAILURE";
 export const STARTING = "STARTING";
 
+// Tasks
+export const GET_TASKS = 'GET_TASKS'
+
 // empty initial data
 export const initialEmptyResult = {
   data: [],

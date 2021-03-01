@@ -1,0 +1,40 @@
+.task{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid rgb(95, 74, 74);
+  margin-top: 5px;
+  padding: 0px 10px 0px 10px;
+  width: 40rem;
+  /* height: 50px; */
+}
+
+.task--MEDIUM{
+  background-color: rgb(145, 145, 185);
+}
+                                            
+.task--HIGH{
+  background-color: rgb(128, 93, 70);
+}
+
+.task--LOW{
+  background-color: rgb(170, 214, 216);
+}
+
+.task__content{
+  flex: 1;
+}
+
+.task__content > p{
+  text-align: center;
+}
+
+.task__content > h4{
+  text-align: center;
+}
+
+.task__btn{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
