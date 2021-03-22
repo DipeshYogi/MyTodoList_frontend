@@ -1,0 +1,41 @@
+.comment__detail{
+  margin-bottom: 15px;
+  padding: 0px 0px 0px 10px;
+  border-bottom: 1px solid rgb(232, 212, 212);
+}
+
+.comment__by {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.comment__by__user{
+  margin: 0px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.comment__by__date{
+  margin: 0px 0px 0px 10px;
+  font-size: 10px;
+  font-weight: bold;
+  color: gray;
+}
+
+.comment__content > p{
+  margin: 0px;
+  padding: 0px;
+  font-size: 14px;
+}
+
+.comment__btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.comment__btn > p {
+  font-size: 12px;
+}

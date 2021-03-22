@@ -12,6 +12,7 @@ export const registerUser = (name, email, password) => dispatch =>{
   dispatch(doPostRequest(url, REGISTER, formdata))
 }
 
+
 export const loginUser = (uname, password) => dispatch =>{
   let url = 'accounts/login/';
   let formdata = new FormData()
@@ -20,6 +21,7 @@ export const loginUser = (uname, password) => dispatch =>{
 
   dispatch(doPostRequest(url, LOGIN, formdata))
 }
+
 
 export const logoutUser = ()=> dispatch => {
   dispatch({

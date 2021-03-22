@@ -38,3 +38,9 @@
   flex-direction: column;
   justify-content: space-around;
 }
+
+.modal__close{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}

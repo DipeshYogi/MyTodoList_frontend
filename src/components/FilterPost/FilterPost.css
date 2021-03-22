@@ -1,0 +1,9 @@
+.filter{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ffff;
+  width: 90%;
+  border: 1px solid rgb(202, 194, 194);
+}

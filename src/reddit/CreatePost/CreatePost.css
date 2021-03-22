@@ -1,0 +1,31 @@
+.createpost{
+  display: flex;
+  flex-direction: column;
+  margin: 0px 400px 0px 200px;
+  height: 100%;
+  padding-bottom: 40px;
+}
+
+.createpost > p{
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.createpost__inp{
+  display: flex;
+  flex-direction: column;
+  background-color: #ffff;
+  padding: 20px 0px 20px 20px;
+  border-radius: 10px;
+}
+
+.createpost__img{
+  margin-top: 20px;
+  width: 90%;
+}
+
+.createpost__btn{
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-end;
+}

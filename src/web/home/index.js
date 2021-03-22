@@ -1,12 +1,18 @@
 import React from 'react';
-import {Button} from '@material-ui/core';
+import {Button, Dialog} from '@material-ui/core';
 import './home.css';
 import {getTasks} from '../../actions/TaskActions';
 import {connect} from 'react-redux';
 import ListTasks from '../../components/ListTasks';
+import CloseIcon from '@material-ui/icons/Close';
+import AddTasks from '../../components/AddTasks';
 
 
 class HomeScreen extends React.Component{
+  state = {
+    openAddTask: false,
+  }
+
   componentDidMount(){
     this.props.getTasks()
   }
@@ -20,6 +26,7 @@ class HomeScreen extends React.Component{
           <Button
             variant='contained'
             color='secondary'
+            onClick={()=> this.setState({openAddTask: true})}
           >
             Add Task
           </Button>
@@ -32,6 +39,18 @@ class HomeScreen extends React.Component{
             ))}
           </div>         
         : null}
+
+        {/* Add task Dialog */}
+        <Dialog
+          open={this.state.openAddTask}
+        >
+          <AddTasks/>
+          <div className='modal__close'>
+            <Button onClick={()=>this.setState({openAddTask:false})}>
+              <CloseIcon style={{fontSize:25, color:"black"}}/>
+            </Button>
+          </div>
+        </Dialog>
       </div>
     )
   }

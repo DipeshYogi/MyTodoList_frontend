@@ -5,3 +5,9 @@
   justify-content: center;
   margin-top: 10px;
 }
+
+.modal__close{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}

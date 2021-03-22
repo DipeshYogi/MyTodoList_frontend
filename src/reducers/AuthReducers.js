@@ -1,4 +1,4 @@
-import {REGISTER, LOGIN, LOGOUT, initialEmptyResult} from '../actions/type';
+import {REGISTER, LOGIN, LOGOUT, UPDATE_PROFILE, initialEmptyResult} from '../actions/type';
 import ReducerHelper from './ReducerHelper';
 
 const initialState = {
@@ -16,10 +16,19 @@ const AuthReducers = (state = initialState, action) => {
         userdata: ReducerHelper.handleRequestData(action)
       }
     case LOGIN:
+      if(action.status == 'SUCCESS'){
+        action.response = action.response.user
+        console.log(action.response)
+      }
       return{
         ...state,
         isAuthenticated: action.status === 'SUCCESS' ? true : false,
         userdata: ReducerHelper.handleRequestData(action)
+      }
+    case UPDATE_PROFILE:
+      return{
+        ...state,
+        userdata: action.status == 'SUCCESS' ? ReducerHelper.handleRequestData(action) : state.userdata
       }
     case LOGOUT:
       return initialState

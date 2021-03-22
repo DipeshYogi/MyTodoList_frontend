@@ -26,6 +26,11 @@ class HeaderScreen extends React.Component{
             >
               <p className='auth_btn'>Logout</p>
             </Button>
+            <Button
+              onClick = {()=> history.push('/reddit/home')}
+            >
+              <p className='auth_btn'>Reddit</p>
+            </Button>
           </div>       
          :
           <div className='header_auth'>

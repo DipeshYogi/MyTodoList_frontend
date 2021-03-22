@@ -1,0 +1,13 @@
+.tasks{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 400px;
+  width: 500px;
+  padding: 50px;
+}
+
+.tasks__btn{
+  display: flex;
+  justify-content: space-around;
+}
